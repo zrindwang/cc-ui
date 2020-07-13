@@ -5,7 +5,7 @@
 </template>
 <!-- chenggong xinxi weixian shangchuan sousuo saoyisao jinggao ren -->
 <script>
-import "../styles/icon";
+import "../../styles/icon";
 export default {
     name: "cc-icon",
     props:{

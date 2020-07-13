@@ -1,26 +1,43 @@
 <template>
-  <div id="app">
-   <cc-button>默认按钮</cc-button>
-   <cc-button type='primary'>主要按钮</cc-button>
-   <cc-button type='warning'>警告按钮</cc-button>
-   <cc-button type='danger'>危险按钮</cc-button>
-   <cc-button type='success'>成功按钮</cc-button>
-   <cc-button type='info'>信息按钮</cc-button>
-   <!-- 带icon的按钮 -->
-   <cc-button   type='danger' icon="xinxi"></cc-button>
-   <cc-button  type='primary' icon="sousuo">信息按钮</cc-button>
-   <cc-button  type='success' icon="sousuo" icon-position="right" >success</cc-button>
-   <!-- loading 按钮 -->
-   <cc-button  type='success' icon="shangchuan" loading>加载中</cc-button>
-   <!-- 触发事件 -->
-   <cc-button type="warning" @click="fn"></cc-button>
-   <cc-button-group>
-     <div></div>
-     <cc-button icon="left" icon-position="left">上一页</cc-button>
-     <cc-button icon="right" icon-position="right">下一页</cc-button>
-   </cc-button-group>
+  <div id="app" style="width:95%;">
+    <cc-row>
+      <cc-col :span="12">
+        <div>aaa</div>
+      </cc-col>
+      <cc-col :span="12">
+        <div>bbb</div>
+      </cc-col>
+    </cc-row>
+    <cc-row>
+      <cc-col :span=6 :offset=12>ccc</cc-col>
+    </cc-row>
+    <cc-row :gutter="20">
+      <cc-col :span="6" >
+        <div class="red">aaa</div>
+      </cc-col>
+       <cc-col :span="6" >
+        <div class="green">aaa</div>
+      </cc-col>
+       <cc-col :span="6" >
+        <div class="red">aaa</div>
+      </cc-col>
+       <cc-col :span="6" >
+        <div class="green">aaa</div>
+      </cc-col>
+    </cc-row>
+
+    <cc-row justify="space-around">
+      <cc-col :span=3 >
+        <div class="green">ccc</div>
+      </cc-col>
+      <cc-col :span=3 >
+        <div class="red">ddd</div>
+      </cc-col>
+      <cc-col :span=3 >
+        <div class="yellow">aaa</div>
+      </cc-col>
+    </cc-row>
   </div>
-  
 </template>
 
 <script>
@@ -39,4 +56,13 @@ export default {
 </script>
 
 <style lang="scss">
+  .red{
+    background: red;
+  }
+  .green{
+    background: green;
+  }
+  .yellow{
+    background: yellow;
+  }
 </style>
